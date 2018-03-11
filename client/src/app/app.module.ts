@@ -10,6 +10,10 @@ import { DashboardComponent } from './components/dashboard/dashboard.component';
 import { RegisterComponent } from './components/register/register.component';
 import { ReactiveFormsModule } from '@angular/forms';
 import { AuthService } from './services/auth.service';
+import { LoginComponent } from './components/login/login.component';
+import { ProfileComponent } from './components/profile/profile.component';
+import { BlogComponent } from './components/blog/blog.component';
+import { ContactComponent } from './components/contact/contact.component';
 
 
 @NgModule({
@@ -18,7 +22,11 @@ import { AuthService } from './services/auth.service';
     NavbarComponent,
     HomeComponent,
     DashboardComponent,
-    RegisterComponent
+    RegisterComponent,
+    LoginComponent,
+    ProfileComponent,
+    BlogComponent,
+    ContactComponent
   ],
   imports: [
     BrowserModule,

@@ -14,6 +14,8 @@ import { LoginComponent } from './components/login/login.component';
 import { ProfileComponent } from './components/profile/profile.component';
 import { BlogComponent } from './components/blog/blog.component';
 import { ContactComponent } from './components/contact/contact.component';
+import { AuthGuard } from './gaurds/auth.gaurd';
+import { NotAuthGuard } from './gaurds/notAuth.gaurd';
 
 
 @NgModule({
@@ -34,7 +36,7 @@ import { ContactComponent } from './components/contact/contact.component';
     AppRoutingModule,
     ReactiveFormsModule
   ],
-  providers: [AuthService],
+  providers: [AuthService, AuthGuard, NotAuthGuard],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
